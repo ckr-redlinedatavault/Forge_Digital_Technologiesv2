@@ -1,5 +1,6 @@
 import SecondaryNavbar from "./components/SecondaryNavbar";
 import Navbar from "./components/Navbar";
+import ScrollingTextBar from "./components/ScrollingTextBar";
 import HeroSection from "./components/HeroSection";
 import SliderSection from "./components/SliderSection";
 import WhyChooseUs from "./components/WhyChooseUs";
@@ -21,6 +22,7 @@ export default function Home() {
       
       {/* 2. MAIN NAVIGATION (Sticky) */}
       <Navbar />
+        <ScrollingTextBar />
 
       <main className="relative">
         {/* OPTIONAL: Subtle Engineering Grid Overlay 
@@ -30,6 +32,7 @@ export default function Home() {
 
         {/* 3. HERO & LOGO MARQUEE */}
         <HeroSection />
+      
         <SliderSection />
 
         {/* 4. VALUE PROPOSITION & IDENTITY */}
