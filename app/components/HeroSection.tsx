@@ -16,26 +16,26 @@ export default function HeroSection() {
         </svg>
       </div>
 
-      <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-center px-6 text-center md:px-10">
+      <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-start px-6 text-left md:px-10 md:items-center md:text-center">
         
-        {/* CENTERED CONTENT */}
-        <div className="flex w-full flex-col items-center space-y-8">
+        {/* CONTENT */}
+        <div className="flex w-full flex-col items-start space-y-8 md:items-center">
           <div className="space-y-4">
             <p className="inline-block border-x-2 border-blue-600 px-4 text-xs font-semibold uppercase tracking-[0.3em] text-zinc-500">
               Digital Product Studio
             </p>
-            <h1 className="text-5xl font-semibold leading-[1.1] tracking-tighter text-zinc-900 md:text-6xl lg:text-7xl">
+            <h1 className="text-4xl font-semibold leading-[1.1] tracking-tighter text-zinc-900 sm:text-5xl md:text-6xl lg:text-7xl">
               {/* Added 'italic' class below */}
               We design and build <span className="text-blue-600 italic">products</span> <br className="hidden md:block" /> that people love.
             </h1>
-            <p className="mx-auto max-w-2xl text-lg leading-relaxed text-zinc-500 md:text-xl">
+            <p className="max-w-2xl text-lg leading-relaxed text-zinc-500 md:text-xl">
               From idea to launch, we help founders and teams ship modern, fast,
               and beautiful web experiences that actually move the needle.
             </p>
           </div>
 
           {/* BUTTONS */}
-          <div className="flex flex-wrap items-center justify-center gap-6">
+          <div className="flex flex-wrap items-center justify-start gap-6 md:justify-center">
             <a
               href="#cta"
               className="group relative inline-flex items-center justify-center bg-zinc-900 px-8 py-4 text-sm font-semibold tracking-widest text-white transition-all hover:bg-blue-600"
@@ -54,13 +54,13 @@ export default function HeroSection() {
           </div>
 
           {/* SOCIAL PROOF */}
-          <div className="flex items-center gap-12 border-t border-zinc-100 pt-10">
-            <div className="flex flex-col items-center">
+          <div className="flex flex-wrap items-start justify-start gap-8 border-t border-zinc-100 pt-10 md:justify-center">
+            <div className="flex flex-col items-start md:items-center">
               <span className="text-3xl font-semibold text-zinc-900">25+</span>
               <span className="text-[10px] font-semibold tracking-widest text-zinc-400 uppercase">Projects Delivered</span>
             </div>
-             <div className="h-10 w-px bg-zinc-100" />
-            <div className="flex flex-col items-center">
+            <div className="h-10 w-px bg-zinc-100 hidden md:block" />
+            <div className="flex flex-col items-start md:items-center">
               <span className="text-3xl font-semibold text-zinc-900">4.9/5</span>
               <span className="text-[10px] font-semibold tracking-widest text-zinc-400 uppercase">Client Rating</span>
             </div>
