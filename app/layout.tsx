@@ -4,6 +4,7 @@ import "./globals.css";
 import ChatBot from "@/components/ChatBot";
 import CookieConsent from "@/components/CookieConsent";
 import StructuredData from "@/components/StructuredData";
+import BottomBanner from "@/components/BottomBanner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -69,6 +70,7 @@ export default function RootLayout({
         {children}
         <ChatBot />
         <CookieConsent />
+        <BottomBanner />
       </body>
     </html>
   );
